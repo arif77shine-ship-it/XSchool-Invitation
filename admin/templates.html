@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manajemen Template - Luxury Invitation</title>
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    
+
+  <header class="admin-header">
+    <div>
+      <h1>X SCHOOL INVITATION</h1>
+      <p>Manajemen Template Undangan</p>
+    </div>
+    <a href="dashboard.html" class="back-link">Kembali ke Dashboard</a>
+  </header>
+
+  <main class="admin-container">
+
+    <section class="admin-card">
+      <h2>Tambah Template Baru</h2>
+      <p class="subtitle">Masukkan informasi template undangan.</p>
+
+      <form id="templateForm">
+
+        <label>Nama Template</label>
+        <input type="text" id="templateName"
+          placeholder="Contoh: Jawa Elegan 01" required>
+
+        <label>Kategori</label>
+        <select id="categoryId" required>
+          <option value="">Memuat kategori...</option>
+        </select>
+
+        <label>Deskripsi</label>
+        <textarea id="description"
+          placeholder="Deskripsi template..."></textarea>
+
+        <label>Harga Template (Rp)</label>
+        <input type="number" id="price"
+          min="0" placeholder="150000" required>
+
+        <label>Foto Thumbnail</label>
+        <input type="file" id="templateImage"
+          accept="image/jpeg,image/png,image/webp" required>
+
+        <div id="imagePreview" class="image-preview">
+          <span>Pratinjau foto akan muncul di sini</span>
+        </div>
+
+        <label>Link Demo Undangan</label>
+        <input type="url" id="demoUrl"
+          placeholder="https://contoh-undangan.netlify.app">
+
+        <div class="check-row">
+          <input type="checkbox" id="isPremium">
+          <label for="isPremium">Template Premium</label>
+        </div>
+
+        <button type="submit" id="saveButton">
+          Simpan Template
+        </button>
+
+        <p id="formMessage"></p>
+
+      </form>
+    </section>
+
+    <section class="admin-card">
+      <h2>Daftar Template</h2>
+      <div id="templateList">Memuat data template...</div>
+    </section>
+
+  </main>
+
+  <script type="module" src="../js/admin/templates.js"></script>
+</body>
+</html>

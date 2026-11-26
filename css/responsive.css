@@ -1,0 +1,89 @@
+
+@media (max-width: 900px) {
+    .template-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .navbar {
+      padding: 0 5%;
+    }
+  
+    .section {
+      padding: 75px 5%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .navbar {
+      height: 68px;
+    }
+  
+    .brand {
+      font-size: 11px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 68px;
+      left: 0;
+      right: 0;
+      background: #101010;
+      padding: 25px;
+      flex-direction: column;
+      gap: 22px;
+      border-bottom: 1px solid #453720;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .hero {
+      min-height: 570px;
+      height: 75vh;
+      padding: 0 7%;
+    }
+  
+    .hero h1 {
+      font-size: 54px;
+    }
+  
+    .hero-bottom {
+      left: 7%;
+      font-size: 8px;
+    }
+  
+    .section {
+      padding: 65px 5%;
+    }
+  
+    .template-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .template-card {
+      max-width: 430px;
+      width: 100%;
+      margin: auto;
+    }
+  
+    .category-list {
+      gap: 7px;
+    }
+  
+    .category-btn {
+      padding: 10px 12px;
+      font-size: 9px;
+    }
+  
+    .modal-content {
+      padding: 28px 20px;
+    }
+  }
+  
